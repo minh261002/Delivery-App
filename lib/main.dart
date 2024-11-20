@@ -1,11 +1,12 @@
 import 'package:delivery_app/constants/constants.dart';
+import 'package:delivery_app/views/entrypoint.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/route_manager.dart';
 
-Widget defaultHome = const Center(child: Text('Home'));
+Widget defaultHome = const MainScreen();
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
