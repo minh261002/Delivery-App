@@ -1,3 +1,4 @@
+import 'package:delivery_app/common/custom_appbar.dart';
 import 'package:delivery_app/common/custom_container.dart';
 import 'package:delivery_app/constants/constants.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +13,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: kPrimary,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(130.h),
-        child: Container(
-          height: 130,
-        ),
+        child: const CustomAppBar(),
       ),
       body: SafeArea(child: CustomContainer(containerContent: Container())),
     );
