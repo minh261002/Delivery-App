@@ -23,7 +23,7 @@ class CategoryWidget extends StatelessWidget {
           controller.updateCategory = '';
           controller.updateTitle = '';
         } else if (category['value'] == 'more') {
-          Get.to(() => AllCategories(),
+          Get.to(() => const AllCategories(),
               transition: Transition.rightToLeft,
               duration: const Duration(milliseconds: 300));
         } else {
